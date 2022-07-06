@@ -10,7 +10,7 @@ Take a snapshot and use Tencent Cloud OCR API to recoginze.
 
 需要从[腾讯云管理后台](https://console.cloud.tencent.com/cam/capi)获取`SecretId`、`SecretKey` 并填入如下的地方。
 
-![首次安装](./screenshots/1.jpg)
+![首次安装](./screenshots/1.png)
 
 后续通过 `ocr` 关键词触发截屏并通过腾讯云 OCR 接口识别。成功识别后自动复制到系统剪切板并消息通知。
 
