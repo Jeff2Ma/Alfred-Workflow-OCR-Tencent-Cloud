@@ -12,7 +12,7 @@ class TxOcr
             $api_url = "https://ocr.tencentcloudapi.com/";  // 接口请求域名
             $api_host = "ocr.tencentcloudapi.com";
             $api_service= "ocr";
-            $api_action = "AdvertiseOCR";   // 公共参数:Action
+            $api_action = "GeneralBasicOCR";   // 公共参数:Action
             $api_region = "ap-guangzhou";  // 公共参数:Region
             $api_version = "2018-11-19";  // 公共参数:Version
             // 请求时间
@@ -72,7 +72,7 @@ class TxOcr
                 $infoDetail = json_decode($ocrRes, true)['Response']['TextDetections'];
                 foreach ($infoDetail as $word) {
                     #echo $word["DetectedText"]."\n";
-                    $results .= $word["DetectedText"]."\n";
+                    $results .= $word["DetectedText"]."\t";
                 }
             }
             #var_dump($results);
